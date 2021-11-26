@@ -1,4 +1,4 @@
-%% IS LD3
+%% IS LD4
 % Atliko: DISfm-21 gr. stud. Gabriela Vdoviak
 clc;
 clear all;
