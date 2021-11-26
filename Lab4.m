@@ -1,12 +1,5 @@
 %% IS LD3
 % Atliko: DISfm-21 gr. stud. Gabriela Vdoviak
-
-% 1. Paruosti duomenys a) mokymui b) testavimui
-% 2. 
-
-% pasirasyti ant lapo pvz savo varda, kad nebutu trukiu ir kad butu ryskiai
-% uzrasyta. (failas, pavyzdziu eiluciu skaicius)
-% eye(11)eye(11).... -> 11 istrizaines skaicius
 clc;
 clear all;
 close all;
@@ -30,7 +23,7 @@ tinklas = newrb(P,T,0,1,12);
 %% Tinklo patikra | Test of the network (recognizer)
 % skaièiuojamas tinklo iðëjimas neþinomiems poþymiams
 % estimate output of the network for unknown symbols (row, that were not used during training)
-P2 = P(:,12:22);
+P2 = P(:,8:14);
 Y2 = sim(tinklas, P2);
 % ieðkoma, kuriame iðëjime gauta didþiausia reikðmë
 % find which neural network output gives maximum value
@@ -132,7 +125,7 @@ tinklas = train(net,P,T);
 %% Tinklo patikra | Test of the network (recognizer)
 % skaièiuojamas tinklo iðëjimas neþinomiems poþymiams
 % estimate output of the network for unknown symbols (row, that were not used during training)
-P2 = P(:,12:22);
+P2 = P(:,1:7);
 Y2 = sim(tinklas, P2);
 % ieðkoma, kuriame iðëjime gauta didþiausia reikðmë
 % find which neural network output gives maximum value
